@@ -1,0 +1,37 @@
+body {
+  margin: auto;
+  width: auto; 
+  padding: 100px;
+  font-family: 'Avenir', sans-serif; 
+  color: #33475b;    
+}
+
+/* Centered Image Code */
+
+div {
+display: flex;
+justify-content: center;
+}
+
+button {
+  background-color: rgb(255, 179, 0);
+   border: 2px solid black;
+   border-radius: 20px;
+  color: rgb(11, 2, 2);
+  padding: 10px 27px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: width, 1s;
+  
+  
+}
+
+button:hover {
+  color:white;
+  transition: width, 1s;
+  background-color: grey;
+}
