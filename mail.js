@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const request = require("request");
 const https = require("https");
+const PORT = process.env.PORT || 3030;
 
  
 const app =  express();
@@ -50,7 +51,7 @@ app.post("/", function(req, res){
       console.log(JSON.parse(data));
     })
 })
- //request.write(jsonData);
+ request.write(jsonData);
  request.end();
 })
 
@@ -59,7 +60,7 @@ app.post("/fail",function(req,res){
   res.redirect("/");
 })
 
-app.listen(3000, function(){
+app.listen(process.env.PORT , function(){
   console.log("server started: port 3000")
 });
  
